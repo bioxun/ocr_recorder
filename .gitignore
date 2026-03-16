@@ -1,0 +1,36 @@
+# out directories
+out/
+
+
+# Build directories
+build/
+*/build/
+*.build/
+
+# Executable files
+*.exe
+*.out
+*.app
+
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# IDE files
+.vscode/
+*.code-workspace
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
