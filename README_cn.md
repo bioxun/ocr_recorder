@@ -1,9 +1,9 @@
 
-# ORC recorder
+# OCR recorder
 
 This program is to record the text on selected region of screen or an application (esp. a video player) for Windows.  
 
-Most other orc applications grab text on screen and store it to clipboard, so ORC recorder is made to simiplify the procedure. Using ORC recorder, we can record the subtitles in a video with just one hotkey. Furthermore, ORC recorder provides the option to specify the character color so that the precision of ocr recognition can be improved in specific cases.
+Most OCR applications grab text on screen and store it to clipboard, which is inconvenient especially if doing it frequently. OCR recorder is made to simiplify the procedure. Using OCR recorder, we can record the subtitles in a video with just one hotkey. Furthermore, OCR recorder provides the option to specify the character color so that the precision of ocr recognition can be improved in specific cases.
 
 ## How to Install
 
@@ -12,22 +12,28 @@ Most other orc applications grab text on screen and store it to clipboard, so OR
 ## How to use
 
 - Set target region
-![Set target region](Images/ocr_recorder_tutorial_1_set_target_region.gif)
+
+  ![Set target region](Images/ocr_recorder_tutorial_1_set_target_region.gif)
 
 - Adjust target region
-![Adjust target region](Images/ocr_recorder_tutorial_2_adjust_target_region.gif)
+
+  ![Adjust target region](Images/ocr_recorder_tutorial_2_adjust_target_region.gif)
 
 - Recognition and record
-![Recognition and record](Images/ocr_recorder_tutorial_3_recognition.gif)
+
+  ![Recognition and record](Images/ocr_recorder_tutorial_3_recognition.gif)
 
 - Set model and parameters of tesseract
-![Settings general](Images/ocr_recorder_settings_general.png)
+
+  ![Settings general](Images/ocr_recorder_settings_general.png)
 
 - Hotkey settings
-![Hotkey settings](Images/ocr_recorder_settings_hotkeys.png)
+
+  ![Hotkey settings](Images/ocr_recorder_settings_hotkeys.png)
 
 - Set character color for mode 2
-![Set character color](Images/ocr_recorder_color_character.png)
+
+  ![Set character color](Images/ocr_recorder_color_character.png)
 
 
 
