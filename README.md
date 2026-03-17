@@ -1,9 +1,9 @@
 
-# ORC recorder
+# OCR recorder
 
 This program is to record the text on selected region of screen or an application (esp. a video player) for Windows.  
 
-Most other orc applications grab text on screen and store it to clipboard, so ORC recorder is made to simiplify the procedure. Using ORC recorder, we can record the subtitles in a video with just one hotkey. Furthermore, ORC recorder provides the option to specify the character color so that the precision of ocr recognition can be improved in specific cases.
+Most OCR applications grab text on screen and store it to clipboard, which is inconvenient especially if doing it frequently. OCR recorder is made to simiplify the procedure. Using OCR recorder, we can record the subtitles in a video with just one hotkey. Furthermore, OCR recorder provides the option to specify the character color so that the precision of ocr recognition can be improved in specific cases.
 
 ## How to Install
 
