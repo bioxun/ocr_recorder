@@ -1,64 +1,50 @@
 
-# ORC screen Project (v1.1)
+# ORC recorder
 
-This program is to do real-time ORC on selected region of screen. 
+This program is to record the text on selected region of screen or an application (esp. a video player) for Windows.  
 
+Most other orc applications grab text on screen and store it to clipboard, so ORC recorder is made to simiplify the procedure. Using ORC recorder, we can record the subtitles in a video with just one hotkey. Furthermore, ORC recorder provides the option to specify the character color so that the precision of ocr recognition can be improved in specific cases.
 
-## Project Structure
-```
-cpp-cmake-demo/
-├── CMakeLists.txt
-├── README.md
-├── .gitignore
-├── src/
-│   └── basic_funcs_for_ocr_screen.hpp, dll_ocr_screen.cpp, test_dll_ocr_screen.cpp, 
-        dll_ocr_screen.lua, ocr_screen.patterns.config, ocr_screen.words.config, ocr_tesser.config, ocr_screen_v1.1.v1ahk
-    └── Images/
-        └── example08.png
-├── include/
-│   └── 
-└── lib/
-    └── 
+## How to Install
 
-```
+[GitHub Releases](https://github.com/bioxun/ocr_recorder/releases/latest)
 
-## Prerequisites for building the project
-```
-This project is tested in windows 10 with MinGW. 
-mingw-w64-x86_64-toolchain ：
-    mingw-w64-x86_64-gcc（15.1.0-8） 
-    mingw-w64-x86_64-crt-git（13.0.0.r107.ge07d54f4b-1）gdiplus gdi32 ole32 uxtheme urlmon shlwapi
-mingw-w64-x86_64-tesseract-ocr 5.5.1-3
-mingw-w64-x86_64-opencv 4.5.5
-mingw-w64-x86_64-leptonica 1.85.0-1
-lua （5.3.4 和 5.4.8-1）
--------------------
-AutoHotkey （v1.1.34.04）
--------------------
-
--------------------
+## How to use
 
 
-```
-
-## Prerequisites for running the built program
-```
-tesseract traineddata
-https://tesseract-ocr.github.io/tessdoc/Data-Files.html
-
-```
-
-## Features
-- **MathUtils Library**: Static library providing mathematical functions
-- **Main Application**: Executable demonstrating library usage
-- **Modern CMake**: Clean, target-based CMake configuration
-- **Cross-platform**: Compatible with Windows, Linux, and macOS
 
 ## Build Instructions
 
+Get the code:
+
+- git clone https://github.com/bioxun/ocr_recorder.git
+
 ### Prerequisites
+
 - CMake 3.10 or higher
-- C++17 compatible compiler
+
+- MinGW
+
+  c++ in MinGW is used to make Dlls (region_selector.dll, dll_ocr_recorder.dll). 
+
+- Packages in MinGW
+  mingw-w64-x86_64-toolchain
+  mingw-w64-x86_64-gcc
+  mingw-w64-x86_64-tesseract-ocr
+  mingw-w64-x86_64-opencv(>=4.5.5 and <4.12.0)
+  mingw-w64-x86_64-leptonica
+  mingw-w64-x86_64-lua 
+
+- AutoHotKey v1
+AutoHotkey v1 is required to build the main executable file, which calls the Dlls (region_selector.dll, dll_ocr_recorder.dll). 
+
+- traineddata of tesseract
+
+  Tesseract is the OCR engine of OCR recorder, so traineddata of tesseract is required, and it can be found at https://tesseract-ocr.github.io/tessdoc/Data-Files.html .
+
+- specify the right path of AutoHotkey in CMakeLists.txt
+
+- specify the right path of tessdata in lua files (dll_ocr_recorder.lua, ocr_recorder.lua, test_dll_ocr_recorder.lua). 
 
 ### Build Steps
 ```bash
@@ -72,16 +58,13 @@ cd build/release
 cmake --build . --target all --
 
 # Run executable
-./test_dll_ocr_screen.exe
-./ocr_screen_v1.1.exe
-
-# Install program
-cmake --build . --target install
-
-# Generates distribution package
-cpack -C Release
+./test_dll_ocr_recorder.exe
+./ocr_screen.exe
 
 ```
 
+
+
 ## License
+
 MIT License
