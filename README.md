@@ -25,14 +25,23 @@ Most OCR applications grab text on screen and store it to clipboard, which is in
 
 - Set model and parameters of tesseract
 
+  Tesseract is the OCR engine of OCR recorder, so traineddata of tesseract is required, and it can be found at https://tesseract-ocr.github.io/tessdoc/Data-Files.html. And then, the path of the folder placing the traineddata should be set at 【模型路径】. Furthermore, the parameters of tesseract (e.g. lang, psm) can also be set just below 【模型路径】. 
+
   ![Settings general](Images/ocr_recorder_settings_general.png)
 
 - Hotkey settings
 
   ![Hotkey settings](Images/ocr_recorder_settings_hotkeys.png)
 
-- Set character color for mode 2
+- 2 color modes for character: 1. any color; 2. monochrome
 
+  In monochrome mode, specific color should be set for target characters. The color can be set in the window pop-up after clicking 【字色选取】. There 3 ways to set the color:
+  1. click 【选取字色】 and click target color
+  2. click 【自动字色】, which color will be selected by averaging the possible characters in the target rigion.
+  3. write RGB color in the Edit control, e.g. 255,255,255 which means white color. 
+  
+  The 【容差（Tolerance）】 box is used to set the range of color be treated as character color. The precision of OCR can be improved by adjust this value. 
+  
   ![Set character color](Images/ocr_recorder_color_character.png)
 
 
@@ -61,10 +70,6 @@ Get the code:
 
 - AutoHotKey v1
 AutoHotkey v1 is required to build the main executable file, which calls the Dlls (region_selector.dll, dll_ocr_recorder.dll). 
-
-- traineddata of tesseract
-
-  Tesseract is the OCR engine of OCR recorder, so traineddata of tesseract is required, and it can be found at https://tesseract-ocr.github.io/tessdoc/Data-Files.html .
 
 - specify the right path of AutoHotkey in CMakeLists.txt
 
