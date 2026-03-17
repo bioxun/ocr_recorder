@@ -11,6 +11,24 @@ Most other orc applications grab text on screen and store it to clipboard, so OR
 
 ## How to use
 
+- Set target region
+![Set target region](Images/ocr_recorder_tutorial_1_set_target_region.gif)
+
+- Adjust target region
+![Adjust target region](Images/ocr_recorder_tutorial_2_adjust_target_region.gif)
+
+- Recognition and record
+![Recognition and record](Images/ocr_recorder_tutorial_3_recognition.gif)
+
+- Set model and parameters of tesseract
+![Settings general](Images/ocr_recorder_settings_general.png)
+
+- Hotkey settings
+![Hotkey settings](Images/ocr_recorder_settings_hotkeys.png)
+
+- Set character color for mode 2
+![Set character color](Images/ocr_recorder_color_character.png)
+
 
 
 ## Build Instructions
