@@ -13,36 +13,36 @@ Most OCR applications grab text on screen and store it to clipboard, which is in
 
 - Set target region
 
-  ![Set target region](Images/ocr_recorder_tutorial_1_set_target_region.gif)
+  ![Set target region](Images/ocr_recorder_tutorial_1_set_target_region_EN.gif)
 
 - Adjust target region
 
-  ![Adjust target region](Images/ocr_recorder_tutorial_2_adjust_target_region.gif)
+  ![Adjust target region](Images/ocr_recorder_tutorial_2_adjust_target_region_EN.gif)
 
 - Recognition and record
 
-  ![Recognition and record](Images/ocr_recorder_tutorial_3_recognition.gif)
+  ![Recognition and record](Images/ocr_recorder_tutorial_3_recognition_EN.gif)
 
 - Set model and parameters of tesseract
 
-  Tesseract is the OCR engine of OCR recorder, so traineddata of tesseract is required, and it can be found at https://tesseract-ocr.github.io/tessdoc/Data-Files.html. And then, the path of the folder placing the traineddata should be set at 【模型路径】. Furthermore, the parameters of tesseract (e.g. lang, psm) can also be set just below 【模型路径】. 
+  Tesseract is the OCR engine of OCR recorder, so traineddata of tesseract is required, and it can be found at https://tesseract-ocr.github.io/tessdoc/Data-Files.html. And then, the path of the folder placing the traineddata should be set at 【tessdata】. Furthermore, the parameters of tesseract (e.g. lang, psm) can also be set just below 【tessdata】. 
 
-  ![Settings general](Images/ocr_recorder_settings_general.png)
+  ![Settings general](Images/ocr_recorder_settings_general_EN.png)
 
 - Hotkey settings
 
-  ![Hotkey settings](Images/ocr_recorder_settings_hotkeys.png)
+  ![Hotkey settings](Images/ocr_recorder_settings_hotkeys_EN.png)
 
 - 2 color modes for character: 1. any color; 2. monochrome
 
-  In monochrome mode, specific color should be set for target characters. The color can be set in the window pop-up after clicking 【字色选取】. There 3 ways to set the color:
-  1. click 【选取字色】 and click target color
-  2. click 【自动字色】, which color will be selected by averaging the possible characters in the target rigion.
+  In monochrome mode, specific color should be set for target characters. The color can be set in the window pop-up after clicking 【Select】. There 3 ways to set the color:
+  1. click 【picker】 and click target color
+  2. click 【autoColor】, which color will be selected by averaging the possible characters in the target rigion.
   3. write RGB color in the Edit control, e.g. 255,255,255 which means white color. 
   
-  The 【容差（Tolerance）】 box is used to set the range of color be treated as character color. The precision of OCR can be improved by adjust this value. 
+  The 【tolerance】 box is used to set the range of color be treated as character color. The precision of OCR can be improved by adjust this value. 
   
-  ![Set character color](Images/ocr_recorder_color_character.png)
+  ![Set character color](Images/ocr_recorder_color_character_EN.png)
 
 
 
